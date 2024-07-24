@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap');
+
+* {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: #1d1d1d;
+}
+.container {
+    display: grid;
+    height: 100vh;
+    gap: 9px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas: "soma multiplicacao nome"
+                         "subtracao imc fatorial"
+                         "divisao imagem cadastro";
+}
+
+#soma {
+    grid-area: soma;
+    background-color: #323537;
+    border-bottom-right-radius: 10px;
+}
+
+#multiplicacao {
+    grid-area: multiplicacao;
+    background-color: #323537;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+#juntanome {
+    grid-area: nome;
+    background-color: #323537;
+    border-bottom-left-radius: 10px;
+}
+
+#subtracao {
+    grid-area: subtracao;
+    background-color: #323537;
+    border-bottom-right-radius: 10px;
+    border-top-right-radius: 10px;
+
+}
+
+#imc {
+    grid-area: imc;
+    background-color:#323537;
+    border-radius: 10px;
+}
+
+#cadastro {
+    grid-area: cadastro;
+    background-color: #323537;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+}
+
+#divisao {
+    grid-area: divisao;
+    background-color: #323537;
+    border-top-right-radius: 10px;
+}
+
+#fatorial {
+    grid-area: fatorial;
+    background-color: #323537;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+#imagem {
+    grid-area: imagem;
+    background-color: #323537;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+#title {
+    font-size: 1.5rem;
+    position: relative;
+    text-align: center;
+    color: white;
+    margin-top: 5px;
+}
+
+.input-box label {
+    font-weight: 500;
+    font-size: 1rem;
+    color: antiquewhite;
+    padding-left: 15px;
+    border: none;
+}
+
+.input-field {
+    display: flex;
+    padding: 0.4rem;
+    border-radius: 100px;
+    margin-top: 1px;
+    margin-left: 10px;
+    margin-right: 10px;
+    background-color: #4e4e4e;
+}
+
+.input-field input {
+    background-color: transparent;
+    border: none;
+    width: 100%;
+    font-size: 1rem;
+    color: antiquewhite;
+    padding: 0.2rem;
+}
+
+#calculate {
+    border: none;
+    font-size: 1rem;
+    font-weight: bold;
+    color: #f8fafc;
+    background-color: #2697e3;
+    padding: 0.25rem 0;
+    border-radius: 3px;
+    cursor: pointer;
+    margin-top: 10px;
+    width: 50%;
+}
+
+#result {
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+    padding: 0.75rem 0;
+    margin-left: 15px;
+    color: antiquewhite;
+}
+
+#form {
+    flex-direction: column;
+    display: flex;
+    align-items:center;
+}
+
+#nomejntd {
+    text-transform: capitalize;
+}
+
+#imagem-legal {
+    width: 300px;
+}
